@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes fadeInCity {
     0% {
         transform: translate(-50%, -50%) scale(.5);
     }
@@ -21,6 +21,8 @@
     }
 }
 
+
+/* CSS RESET */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -47,6 +49,7 @@ li {
     font-size: 1.6rem;
 }
 
+/* Background blue gradient */
 .bg-gradient {
     background: linear-gradient(0deg, rgba(51, 68, 135, 1) 0%, rgba(135, 204, 255, 1) 100%);
     background-repeat: no-repeat;
@@ -66,6 +69,7 @@ li {
     color: white;
 }
 
+/* Image from the city */
 .city-image {
     position: absolute;
     top: 50%;
@@ -77,27 +81,31 @@ li {
     background-image: url('./img/city.png');
     background-repeat: no-repeat;
     background-size: contain;
-    animation: fadeIn;
+    animation: fadeInCity;
     animation-duration: .5s;
     animation-timing-function: ease-in-out;
 }
 
+/* City Name -text- */
 .city {
     font-size: 1.8rem;
     font-weight: 400;
 }
 
+/* Temperature info - container */
 .weather {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Temperature degrees */
 .weather__temperature {
     font-size: 5.5rem;
     font-weight: 500;
 }
 
+/* Weather description */
 .weather__description {
     font-size: 1.6rem;
     font-weight: 400;
