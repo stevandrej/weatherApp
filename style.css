@@ -14,8 +14,22 @@
         opacity: .3;
     }
     100% {
+        top: 8%;
+        left: 56%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fromLeftCloud {
+    0% {
+        top: 0;
+        left: 0;
+        opacity: .3;
+    }
+    100% {
         top: 20%;
-        left: 35%;
+        left: 30%;
         opacity: 1;
         visibility: visible;
     }
@@ -115,6 +129,15 @@ li {
     width: 90px;
     height: 90px;
     position: absolute;
+    filter: drop-shadow(0px 0px 5px #fffadd);
     visibility: hidden;
-    animation: fromLeftSun forwards .6s .7s;
+    animation: fromLeftSun forwards .8s .7s ease-in-out;
+}
+
+.cloud {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    visibility: hidden;
+    animation: fromLeftCloud forwards .8s 1.1s ease-in-out;
 }
