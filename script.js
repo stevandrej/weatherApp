@@ -47,10 +47,6 @@ async function getWeather(city) {
 
         weatherDescription.innerHTML = data.weather[0].description;
 
-        if (data.weather[0].id === 801 || data.weather[0].id === 802) {
-            weatherIcons.appendChild(sun);
-            weatherIcons.appendChild(cloud);
-        }
         switch (data.weather[0].id) {
             case 800:
                 weatherIcons.appendChild(sun);
