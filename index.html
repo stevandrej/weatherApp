@@ -7,19 +7,24 @@
     <title>Weather App</title>
 </head>
 <body class="bg-gradient">
+
+    <label class="searchBar">Enter city: <input type="text" placeholder="City name" id='cityInput' ></label>
+
+
     <div class="container">
         <div class="city-image"></div>
         
-        <h3 class="city">Baltimore</h3>
+        <h3 class="city"></h3>
 
         <div class="weather">
-            <h2 class="weather__temperature">20<span>&#176;</span></h2>
-            <h4 class="weather__description">Partly Cloudy</h4>
+            <h2 class="weather__temperature"></h2>
+            <h4 class="weather__description"></h4>
         </div>
 
-        <img class="sun" src="./img/sun.png" alt="sun">
-        <img class="cloud" src="./img/cloud.png" alt="cloud">
-        <img class="cloud" src="./img/cloud.png" alt="cloud">
+        <div id="weather-icons">
+        </div>
     </div>
+
+    <script src='./script.js'></script>
 </body>
 </html>
