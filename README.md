@@ -5,5 +5,5 @@
 
 
 ### Technologies used
-Vanilla Javascript
-CSS
+- Vanilla Javascript
+- CSS
