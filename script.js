@@ -19,7 +19,7 @@ function clearWeatherIcons() {
 }
 
 async function getWeather(city) {
-    const API_KEY = '24f438d90630d1490c4ffcdd216dcb02';
+    const API_KEY = config.API_KEY;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
     return await fetch(url).then(response => response.json());
