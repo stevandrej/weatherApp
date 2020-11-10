@@ -24,7 +24,7 @@ async function getWeather(city) {
     return await fetch(url).then(response => response.json());
 }
 
-(setWeather = async () => {
+const setWeather = async () => {
 
     //If input empty, set default city to Skopje
     let city = 'Skopje'
@@ -79,7 +79,7 @@ async function getWeather(city) {
         weatherDescription.innerHTML = '';
     }
 
-})();
+}
 
 cityInput.addEventListener("keyup", event => {
     event.preventDefault();
@@ -89,3 +89,5 @@ cityInput.addEventListener("keyup", event => {
         cityInput.value = '';
     }
 })
+
+document.onload = setWeather();
